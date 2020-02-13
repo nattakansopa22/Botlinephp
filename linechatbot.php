@@ -11,7 +11,7 @@ $mqtt = new phpMQTT("hairdresser.cloudmqtt.com", 16093, "phpMQTT Pub Nodemcu"); 
 $token = "PrEXTPeWFFBKhqPxCjRz1+tKJ76bSTmkKkzVE3UwSBcMedaupGVzEWZGffy/j6iUanH2mt+jri8nLCtOgX8QTZCRD7fmo1QIIIwZ0ikCt7bwbUx6pm7GPxPQt8UNFKbuqEZfp364rzhmKQvRZVgsFAdB04t89/1O/w1cDnyilFU="; //นำ token ที่มาจาก line developer account ของเรามาใส่ครับ
  
 $httpClient = new CurlHTTPClient($token);
-$bot = new LINEBot($httpClient, ['channelSecret' =&gt; $token]);
+$bot = new LINEBot($httpClient, ['7ad61db4f944c69e260ecefcd2c10660' =&gt; $token]);
 // webhook
 $jsonStr = file_get_contents('php://input');
 $jsonObj = json_decode($jsonStr);
